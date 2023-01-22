@@ -4,9 +4,13 @@ import styles from "./styles.module.scss";
 export default function Links() {
     return (
         <div className={styles.footer__links}>
-            {links.map((link) => (
+            {links.map((link, i) => (
                 <ul>
-                    <b>{link.heading}</b>
+                    {i === 0 ? (
+                        <img src="https://www.seekpng.com/png/detail/15-158716_free-download-rectangle-png.png" />
+                    ) : (
+                        <b>{link.heading}</b>
+                    )}
                     {link.links.map((link) => (
                         <li>
                             <Link href={link.link}>{link.name}</Link>
