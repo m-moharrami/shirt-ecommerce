@@ -34,3 +34,9 @@ export async function getServerSideProps() {
         },
     };
 }
+
+// I'm in this fucking cafe again, for the first time in a while it's busy here.
+// There is an actress who was playing role in a Turkish serial and left it and came back to Iran
+// Sometimes I wonder how weird some people could be
+// It's the most strange thing of this week seeing her here.
+// I'm killing myself to escape here and she came back to sit and drink in a low-level cafe. FUCK!!!
