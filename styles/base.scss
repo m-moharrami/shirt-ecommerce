@@ -1,4 +1,7 @@
 $blue-color: #2f82ff;
+$yellow-color: #fac80f;
+$violet-color: #5a31f4;
+$reddish-color: #f15f6f;
 $gray-color: #f8f8f8;
 $light-error-color: #fd010169;
 $error-color: #ed4337;
@@ -89,7 +92,8 @@ $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 }
 
-.mainSwiper {
+.mainSwiper,
+.offers_swiper {
     .swiper-slide img {
         height: 300px !important;
         border-radius: 10px !important;
@@ -119,6 +123,59 @@ $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
     .swiper-button-next {
         right: -13px;
+    }
+}
+
+.offers_swiper {
+    min-width: 550px;
+    transform: translateX(40%);
+    .swiper-pagination {
+        display: none;
+    }
+    .swiper-slide {
+        width: 150px !important;
+        border-radius: 10px !important;
+        height: 90%;
+        margin-top: 0.6rem !important;
+        box-shadow: $shadow-1;
+        &:hover {
+            transform: scale(1.03);
+            transition: 0.2s;
+        }
+        span {
+            position: absolute;
+            color: #fff;
+            &:first-of-type {
+                bottom: 10px;
+                width: 90px;
+                height: 25px;
+                border-radius: 50px;
+                font-size: 16px;
+                font-weight: 600;
+                background: $yellow-color;
+            }
+            &:last-of-type {
+                font-style: italic;
+                top: -5px;
+                right: -5px;
+                background: $reddish-color;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                font-size: 16px;
+                font-weight: 600;
+                box-shadow: $shadow-1;
+            }
+        }
+    }
+    .swiper-slide img {
+        position: absolute;
+        width: 100% !important;
+        height: 100% !important;
+        top: 0;
+        object-fit: cover !important;
     }
 }
 // -------------- Swipers --------------

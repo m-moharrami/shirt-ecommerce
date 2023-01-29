@@ -20,7 +20,7 @@ export default function MainSwiper() {
                 spaceBetween={30}
                 loop={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 25000000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
