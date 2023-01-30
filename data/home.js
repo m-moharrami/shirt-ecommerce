@@ -35,3 +35,19 @@ export const offersArray = [
         discount: "9",
     },
 ];
+
+export const menuArray = [
+    {
+        name: "Men's t-shirt",
+        icon: "IoShirtSharp",
+        link: "",
+        subMenu: [
+            {
+                name: "",
+                link: "",
+            },
+        ],
+        brands: [],
+        images: [],
+    },
+];
